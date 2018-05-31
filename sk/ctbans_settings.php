@@ -335,7 +335,7 @@ else {
 		$ctbans_version = fgets($file);
 		fclose($file);
 		
-		if ($ctbans_version != "built=1.5.0/2018") {
+		if ($ctbans_version != "built=1.5.1/2018") {
 			
 			$OUT_OF_DATE = true;
 			

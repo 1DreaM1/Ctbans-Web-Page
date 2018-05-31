@@ -1293,7 +1293,10 @@ try
 		}
 		else
 		{
-			$ctbanpage = $_GET['ctbanpage'];
+			$ctbanpage = htmlspecialchars($_GET['ctbanpage']);
+			$ctbanpage = mysqli_real_escape_string($dbh, $ctbanpage);
+			$ctbanpage = trim($ctbanpage);
+			$ctbanpage = stripslashes($ctbanpage);
 		}
 		
 		if (!empty($_GET['banid'])) {
