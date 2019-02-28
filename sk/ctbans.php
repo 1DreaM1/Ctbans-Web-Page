@@ -39,8 +39,7 @@ try
 	else {
 		mysqli_select_db($dbh, $database) or die("Unable to select specified database");
 		mysqli_set_charset($dbh, "utf8");
-	}
-	
+	}	
 }
 catch (Exception $e)
 {
